@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./neurons/neuron/latest/neuron.js"></script>
+    <script>
+        neuron.config({
+            path: "./neurons"
+        })
+    </script>
+</head>
+<body>
+
+    <script>
+        _use("storage",function(storage){
+            storage.setItem("a",1);
+            console.log(storage.getItem("a"));
+        });
+    </script>
+
+</body>
+</html>

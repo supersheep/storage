@@ -1,0 +1,45 @@
+{
+  "name": "storage",
+  "description": "The coolest cortex module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/supersheep/storage",
+  "author": {
+    "name": "supersheep",
+    "email": "supersheepxjy@gmail.com"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supersheep/storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supersheep/storage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/supersheep/storage/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [],
+  "cortex": {
+    "devDependencies": {
+      "neuron": "~4.4.1"
+    },
+    "asyncDependencies": {},
+    "scripts": {},
+    "dependencies": {
+      "lang": "~1.0.0",
+      "json": "~1.0.0"
+    }
+  }
+}
