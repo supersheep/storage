@@ -1,7 +1,7 @@
 {
   "name": "storage",
   "description": "The coolest cortex module",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "https://github.com/supersheep/storage",
   "author": {
     "name": "supersheep",
@@ -33,13 +33,16 @@
   "keywords": [],
   "cortex": {
     "devDependencies": {
-      "neuron": "~4.4.1"
+      "neuron": "~4.4.1",
+      "assert": "~1.0.1"
     },
     "asyncDependencies": {},
     "scripts": {},
     "dependencies": {
       "lang": "~1.0.0",
-      "json": "~1.0.0"
-    }
+      "json": "~1.0.0",
+      "underscore": "~1.5.3"
+    },
+    "engines": {}
   }
 }
