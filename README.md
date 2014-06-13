@@ -1,66 +1,31 @@
 # storage
+[![Build Status](http://browserman.dp:9000/api/app/storage/badge)](http://search.cortexjs.org/package/storage)
 
-> The coolest cortex module
+> Storage api for multi-browsers
 
-## Getting Started
-Before anything taking its part, you should install [node](http://nodejs.org) and "cortex".
+### .clear()
+清空所有存储数据
 
-#### Install Node
+### .length()
+获取存储数据数量
 
-Visit [http://nodejs.org](http://nodejs.org), download and install the proper version of nodejs.
+### .setItem(key,value)
+根据key,value存储数据
 
-#### Install Cortex
+### .getItem(key)
+根据key获取存储的值
 
-    # maybe you should use `sudo`
-    npm install -g cortex
+- 获取未赋值的key,为undefined
+- 存储字符，获取字符
+- 存储数字，获取数字的字符
+- 存储布尔值，获取布尔值对应小写字符
+- 存储对象，获取[object Object]
+- 存储函数，获取函数的toString
+- 存储数组，获取数组join逗号
+- 存储日期，获取日期的toString
+- 存储正则，获取正则的toString
+- 存储null，等于删除key
+- 存储undefined，等于删除key
 
-## Using storage In Your Project
-
-First, install 'storage' directly with `cortex install` (recommended)
-
-	cortex install storage --save
-
-or, you could update your package.json manually
-
-    dependencies: {
-        'storage': '<version-you-want>'
-    }
-
-and install dependencies
-
-	cortex install
-
-Then, use `require` method in your module
-
-    var storage = require('storage');
-
-Finally, start cortex server
-
-    cortex server
-
-Then cortex will care all the rest.
-
-
-## API Documentation
-
-### storage: constructor
-': constructor' means the `module.exports` of module 'storage' is a constructor that we should use it with the `new` keyword
-
-	new storage(options)
-
-#### options
-- options.name {String}
-
-
-
-### storage.\<method-name\>(arguments)
-Means this is a static method of `module.exports`
-
-#### arguments
-// arguments description here
-
-### .\<method-name\>(arguments)
-Mean this is a method of the instance
-
-#### arguments
-// arguments description here
+### .removeItem(key)
+根据key删除数据
