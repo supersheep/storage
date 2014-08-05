@@ -1,7 +1,7 @@
 {
   "name": "storage",
   "description": "The coolest cortex module",
-  "version": "0.2.1",
+  "version": "0.2.4",
   "homepage": "https://github.com/supersheep/storage",
   "author": {
     "name": "supersheep",
